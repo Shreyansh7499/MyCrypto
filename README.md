@@ -20,8 +20,7 @@ from attack_rsa import *
 d = attack_rsa.attack(e = 3, n = 35, c = None, attack_types = ['fermat', 'wiener'])
 
 </code></pre>
-# Attacks on RSA
 
-## Weiner Attack
-
-## Fermat Factoring Attack
+# Attacks Implemented
+1. Weiner Attack
+2. Fermat Factoring Attack
