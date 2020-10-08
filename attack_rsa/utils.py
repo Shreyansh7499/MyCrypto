@@ -91,6 +91,16 @@ def get_all_quadratic_residue (n):
 			res[residue] = [i]
 	return res
 
+def is_quadratic_residue(a, p):
+	"""
+	Euler's criterion: Let p be an odd prime and gcd(a, p) = 1, Then a 
+	is a quadratic residue of p if and only if a^((p-1) / 2) = 1 (mod p).
+	
+	Complexity : O(1)
+	"""
+	return pow(a, ((p - 1) / 2), p) == 1
+
+
 def get_pickle(filename):
 	with open(filename, 'rb') as f:
 		obj = pickle.load(f)
@@ -99,3 +109,4 @@ def get_pickle(filename):
 def set_pickle(filename, variable):
 	with open(filename, 'wb') as f:
 		pickle.dump(variable, f)
+
