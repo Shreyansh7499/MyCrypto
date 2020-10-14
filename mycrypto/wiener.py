@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import fractions
-import numpy as np
 import gmpy2
 from .utils import *
 

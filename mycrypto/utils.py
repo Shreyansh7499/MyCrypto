@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 
 import fractions
-import numpy as np
-import gmpy2
 from Crypto.PublicKey import RSA
 from asn1crypto.x509 import Certificate
 import pickle

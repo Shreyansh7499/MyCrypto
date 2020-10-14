@@ -5,8 +5,8 @@ from setuptools import *
 setup(
     name = 'mycrypto',
     author='Shreyansh Nagpal',
-    version = '0.1.1',
-    description='Implementation of various attacks on CTF Cryptography',
-    install_requires = ['gmpy', 'pycryptodome'],
-    packages = ['attack_rsa']
+    version = '0.1.2',
+    description='A CTF helper for Cryptography',
+    install_requires = ['gmpy', 'pycryptodome', 'asn1crypto'],
+    packages = ['mycrypto']
 )

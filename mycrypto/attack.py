@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import gmpy
 from .RSA_Key import RSA_Key
 from .fermat_factoring import Fermat_Factoring_Attack
 from .wiener import wiener_attack
@@ -15,7 +14,7 @@ def attack_util(key, attack_type):
 		return wiener_attack(key)
 
 
-def attack(e, n, c = None, attack_types = None):
+def attack_rsa(e, n, c = None, attack_types = None):
 	
 	key = RSA_Key(e, n)
 
